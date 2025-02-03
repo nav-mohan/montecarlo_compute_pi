@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.8em;
     color: #ffce84;
     text-align: center;
 }
@@ -36,10 +36,11 @@ h2 {
 }
 
 .canvas-container{
-    border: 2px solid green;
+    border: 2px solid rgb(255, 255, 255);
     margin: 0 auto;
     width: 100%;
     background-color: #080707;
+    padding: 0.5em;
 }
 
 canvas {
@@ -63,7 +64,7 @@ canvas {
 }
 
 .progress-bar {
-    background-color: #ff9800;
+    background-color: #0f9bec;
     height: 1.2em;
     width: 0%;
     transition: width 0.3s;
