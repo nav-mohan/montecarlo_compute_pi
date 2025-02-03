@@ -8,6 +8,7 @@ window.addEventListener('load',(e)=> {
     __G_CIRCLE["CENTER_X"]          = __G_CANVAS["CANVAS_WIDTH"] / 2;
     __G_CIRCLE["CENTER_Y"]          = __G_CANVAS["CANVAS_HEIGHT"] / 2;
 
+    initializeUI();
     initializeCircle();
 })
 
@@ -18,5 +19,13 @@ function initializeCircle()
     __G_CANVAS["CANVAS_CONTEXT"].arc(__G_CIRCLE["CENTER_X"], __G_CIRCLE["CENTER_Y"], __G_CIRCLE["RADIUS"], 0, 2 * Math.PI);
     __G_CANVAS["CANVAS_CONTEXT"].strokeStyle = "white";
     __G_CANVAS["CANVAS_CONTEXT"].stroke();
+}
+
+function initializeUI()
+{
+    __G_UI["PI_ESTIMATE"]       = document.getElementById("pi-estimate")
+    __G_UI["PI_ERROR"]          = document.getElementById("pi-error")
+    __G_UI["PROGRESS_BAR"]      = document.getElementById("progress-bar")
+    __G_UI["PROGRESS_TEXT"]     = document.getElementById("progress-text")
 }
 
