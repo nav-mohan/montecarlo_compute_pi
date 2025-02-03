@@ -17,3 +17,10 @@ const __G_UI = {
     "PROGRESS_BAR"      : null,
     "PROGRESS_TEXT"     : null,
 };
+
+const __G_ANIMATION = {
+    "INSIDE_CIRCLE"     : null,
+    "TOTAL_POINTS"      : null,
+    "NUM_POINTS"        : null,
+    "BATCH_SIZE"        : null,
+}
