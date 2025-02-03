@@ -79,3 +79,20 @@ canvas {
     color: #ffffff;
     font-weight: bold;
 }
+
+#start-button {
+    font-size: 1.3em;
+    padding: 0.3em 0.6em;
+    background-color: #f8c984;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1em;
+}
+
+#start-button:hover {
+    background-color: #fc9a07;
+}
+
