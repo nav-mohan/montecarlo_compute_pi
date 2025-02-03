@@ -87,3 +87,13 @@ function animationStep()
     requestAnimationFrame(animationStep);
 }
 
+// Monte Carlo Pi Estimation
+function monteCarloPI(numPoints) 
+{
+    __G_ANIMATION["INSIDE_CIRCLE"]  = 0;
+    __G_ANIMATION["TOTAL_POINTS"]   = 0;
+    __G_ANIMATION["NUM_POINTS"]     = numPoints;
+    __G_ANIMATION["BATCH_SIZE"]     = 100;
+
+    animationStep();
+}
