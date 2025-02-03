@@ -43,3 +43,13 @@ function updateProgress(progressValue)
     __G_UI["PROGRESS_BAR"].style.width  = `${progressValue}%`;
     __G_UI["PROGRESS_TEXT"].textContent = `${progressValue.toFixed(2)}%`;
 }
+
+// Draw a point
+function drawPoint(x, y, color) 
+{
+    __G_CANVAS["CANVAS_CONTEXT"].beginPath();
+    __G_CANVAS["CANVAS_CONTEXT"].arc(x, y, 2, 0, 2 * Math.PI);
+    __G_CANVAS["CANVAS_CONTEXT"].fillStyle = color;
+    __G_CANVAS["CANVAS_CONTEXT"].fill();
+}
+
