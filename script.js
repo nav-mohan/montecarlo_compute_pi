@@ -29,3 +29,17 @@ function initializeUI()
     __G_UI["PROGRESS_TEXT"]     = document.getElementById("progress-text")
 }
 
+// Update Pi estimate and error rate
+function updateStats(piEstimate)
+{
+    __G_UI["PI_ESTIMATE"].textContent   = `Estimated Pi: ${piEstimate.toFixed(4)}`;
+    const errorRate                     = ((piEstimate - Math.PI) / Math.PI) * 100;
+    __G_UI["PI_ERROR"].textContent      = `Error Rate: ${errorRate.toFixed(2)}%`;
+}
+
+// Update progress bar
+function updateProgress(progressValue)
+{
+    __G_UI["PROGRESS_BAR"].style.width  = `${progressValue}%`;
+    __G_UI["PROGRESS_TEXT"].textContent = `${progressValue.toFixed(2)}%`;
+}
